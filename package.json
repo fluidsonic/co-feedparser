@@ -1,0 +1,28 @@
+{
+  "name": "co-feedparser",
+  "version": "0.16.5",
+  "description": "co wrapper for feedparser package.",
+  "keywords": [
+    "co",
+    "rss",
+    "atom",
+    "feed",
+    "rdf",
+    "xml",
+    "parser",
+    "generators"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fluidsonic/co-feedparser",
+  "bugs": "https://github.com/fluidsonic/co-feedparser/issues",
+  "author": "Marc Knaup <marc.knaup@koeln.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fluidsonic/co-feedparser.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "feedparser": "0.16.5",
+    "request": "~2.31.0"
+  }
+}
