@@ -1,6 +1,6 @@
 {
   "name": "co-feedparser",
-  "version": "0.16.5",
+  "version": "1.1.4",
   "description": "co wrapper for feedparser package.",
   "keywords": [
     "co",
@@ -22,7 +22,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "feedparser": "~1.1.4",
+    "feedparser": "1.1.4",
     "request": "~2.74.0"
   }
 }
