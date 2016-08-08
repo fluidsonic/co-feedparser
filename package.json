@@ -22,7 +22,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "feedparser": "0.16.5",
-    "request": "~2.31.0"
+    "feedparser": "~1.1.4",
+    "request": "~2.74.0"
   }
 }

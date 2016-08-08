@@ -1,7 +1,7 @@
 co-feedparser
 =============
 
-[co](https://github.com/visionmedia/co) wrapper for [feedparser](https://github.com/danmactough/node-feedparser) package.
+[co](https://github.com/tj/co) wrapper for [feedparser](https://github.com/danmactough/node-feedparser) package.
 
 
 
@@ -9,10 +9,20 @@ Quickstart
 ----------
 
 ```javascript
-const feedParser = require('co-feedparser');
+const co         = require('co')
+const feedParser = require('co-feedparser')
 
-const meta = yield feedParser('https://github.com/blog/all.atom');
-const articles = meta.articles;
+co(function*() {
+    try {
+        const meta = yield feedParser('https://github.com/blog/all.atom')
+        const articles = meta.articles
+
+        console.log(articles)
+    }
+    catch (error) {
+        console.error(error.stack)
+    }
+})
 ```
 
 
@@ -48,7 +58,7 @@ Installation
 Requirements
 ------------
 
-Node 0.11+, run with `--harmony` flag.
+Node 4.0.0 or newer
 
 
 
